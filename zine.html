@@ -18,26 +18,64 @@
             <li><a href="#Autorzy">8 Autorzy</a></li>
             </ul>
         </nav>
-    <h1>Felietony</h1>
-        <h2>,,Co za dużo to niezdrowo'', czyli jak nie tworzyć gier komputerowych.</h2>
-            <p>Wraz z nastającymi wymaganiami narzucanymi przez producentów i graczy programiści zaczynają mieć dość.
-                Coraz więcej błędów powoduje, że nie da się grać w niektóre gry trzeba tą liczbę zmniejszyć.</p>
-    <h1>Wiadomości</h1>
-        <h2>GTA VI</h2>
-            <p>Kolejne przecieki w firmie rockstar games wzięły pod pytajnik jakosc nowej części.</p>
-    <h1>Screenshoty</h1>
-        <img src="Screen1.png"></href>
-        <img src="Screen2.png"></href>
-    <h1>Komentarze Internautów</h1>
-        <h2>Nie za miłe komentarze</h2>
-            <p>Redaktorzy to chyba nie wiedzą co mówią!</p>
-            <p>Kto czyta takie bzdety? Ludzie...</p>
-            <p>Nie wiem czego się spodziewałem</p>
-            <p>Ja to nie lubię tej gry co jej daliście 10, już nie będę tego czytał.</p>
-        <h2>Miłe słowa</h2>
-            <p>Całkiem ok sie czyta.</p>
-            <p>Nie jest źle.</p>
-    <h1>Autorzy</h1>
-    <h2>Karol Świerczek</h2>
+    <h1 id="Spis Treści">Felietony</h1>
+        <main>
+            <article>
+                <h2>,,Co za dużo to niezdrowo'', czyli jak nie tworzyć gier komputerowych.</h2>
+                <p>Wraz z nastającymi wymaganiami narzucanymi przez producentów i graczy programiści zaczynają mieć dość.
+                    Coraz więcej błędów powoduje, że nie da się grać w niektóre gry trzeba tą liczbę zmniejszyć.</p>
+            </article>
+        </main>
+    <h1 id="Wiadomości">Wiadomości</h1>
+        <main>
+            <article>
+                <h2>GTA VI</h2>
+                <p>Kolejne przecieki w firmie rockstar games wzięły pod pytajnik jakosc nowej części.</p>
+            </article>
+            <aside>
+                <h2>Ciekawostka</h2>
+                <p>Alternatywne źródła mówią, że to nieprawda.</p>
+            </aside>
+        </main>
+   <h1 id="Screenshoty">Screenshoty</h1>
+        <ul>
+            <li>BUG<img src="Screen1.png"></href></li>
+            <li>SCENERIE W GRACH<img src="Screen2.png"></href></li>
+        </ul>
+    <h1 id="Komentarze">Komentarze Internautów</h1>
+        <table>
+            <caption>Nie za miłe komentarze</caption>
+                <thead>
+                    <tr><th scope="col">Nick</th>
+                    <th scope="col">Komentarz</th></tr>
+                </thead>
+                <tbody>
+                <tr><td>Maliniarz33</td><td>Redaktorzy to chyba nie wiedzą co mówią!</td></tr>
+                <tr><td>_Żigolo_</td><td>Kto czyta takie bzdety? Ludzie...</td></tr>
+                <tr><td>xXDExTEROSKYXx</td><td>Nie wiem czego się strodziewałem</td></tr>
+                <tr><td>Wielki_Maniak12</td><td>Ja to nie lubię tej gry co jej daliście 10, już nie będę tego czytał.</td></tr>
+                </tbody>
+            <caption>Miłe słowa</caption>
+                <thead>
+                    <tr><th scope="col">Nick</th>
+                    <th scope="col">Komentarz</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>BotPiotr</td><td>Całkiem ok sie czyta.</td></tr>
+                    <tr><td>Anonim</td><td>Nie jest źle.</td></tr>
+                </tbody>
+        </table>
+    <h1 id ="Napisz">Napisz coś do nas</h1>
+        <form action="/zapisy" method="post">
+            <label for="mail">E-mail</label>
+            <input id="mail" name="mail" type="email" required>
+            <label for="nick">Nick</label>
+            <input id="nick" name="nick" type="text">
+            <label for="tresc">Treść</label>
+            <input id="tresc" name="tresc" type="text">
+            <button type="submit">Wyślij</button>
+        </form>
+    <h1 id="Autorzy">Autorzy</h1>
+    <footer>Karol Świerczek</footer>
 </body>
 </html>
