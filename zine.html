@@ -4,86 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZIN * ZINNOUS GAMES * NR 7 </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <header>
-        <h1>ZIN * ZINNOUS GAMES * NR 7</h1>
-        <p>Gazetka o grach komputerowych</p>
-    </header>
-
-    <h1 id="Spis Tresci">Spis treści</h1>
+    <div class="strona">
+        <header>
+            <h1>ZIN * ZINNOUS GAMES * NR 7</h1>
+            <p>Gazetka o grach komputerowych</p>
+        </header>
         <nav>
             <ul>
-            <li><a href="#Spis Tresci">2 Spis Treści</a></li>
-            <li><a href="#Felietony">3 Felietony</a></li>
-            <li><a href="#Wiadomości">4 Wiadomości</a></li>
-            <li><a href="#Screenshoty">5 Screenshoty</a></li>
-            <li><a href="#Komentarze">6 Komentarze Internautów</a></li>
-            <li><a href="#Napisz">7 Napisz coś do nas</a></li>
-            <li><a href="#Autorzy">8 Autorzy</a></li>
+                <li><a href="#Felietony">Felietony</a></li>
+                <li><a href="#Wiadomości">Wiadomości</a></li>
+                <li><a href="#Screenshoty">Screenshoty</a></li>
+            </ul>
+            <h1 id="Spis Tresci">Spis treści</h1>
+            <ul>
+                <li><a href="#Komentarze">Komentarze Internautów</a></li>
+                <li><a href="#Napisz">Napisz coś do nas</a></li>
+                <li><a href="#Autorzy">Autorzy</a></li>
             </ul>
         </nav>
-    <h1 id="Felietony">Felietony</h1>
         <main>
-            <article>
-                <h2>,,Co za dużo to niezdrowo'', czyli jak nie tworzyć gier komputerowych.</h2>
-                <p>Wraz z nastającymi wymaganiami narzucanymi przez producentów i graczy programiści zaczynają mieć dość.
-                    Coraz więcej błędów powoduje, że nie da się grać w niektóre gry - trzeba tę liczbę zmniejszyć.</p>
-            </article>
+                
+            <h1 id="Felietony">Felietony</h1>
+                <article>
+                        <h2>,,Co za dużo to niezdrowo'', czyli jak nie tworzyć gier komputerowych.</h2>
+                        <p>Wraz z nastającymi wymaganiami narzucanymi przez producentów i graczy programiści zaczynają mieć dość.
+                            Coraz więcej błędów powoduje, że nie da się grać w niektóre gry - trzeba tę liczbę zmniejszyć.</p>
+                </article>
+            
+            <h1 id="Wiadomości">Wiadomości</h1>
+            <div class="wiadomosci">        
+                    <article class="wiadomosc">
+                            <h2>GTA VI</h2>
+                            <p>Kolejne przecieki w firmie rockstar games wzięły pod pytajnik jakosc nowej części.</p>
+                    </article>
+                    <aside class="ciekawostka">
+                        <h2>Ciekawostka</h2>
+                        <p>Alternatywne źródła mówią, że to nieprawda.</p>
+                    </aside>
+            </div>
+        <h1 id="Screenshoty">Screenshoty</h1>
+                <ul class = "Zdjecia">
+                    <li>
+                        <img src="Screen1.png">
+                        <span>BUG</span>
+                    </li>
+                    <li>
+                        <img src="Screen2.png">
+                        <span>SCENERIE W GRACH</span>
+                    </li>
+                </ul>
+        <h1 id="Komentarze">Komentarze Internautów</h1>
+        <div class="komentarze">
+            
+                <table class="niemile">
+                    <caption>Nie za miłe komentarze</caption>
+                        <thead>
+                            <tr><th scope="col">Nick</th>
+                            <th scope="col">Komentarz</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Maliniarz33</td><td>Redaktorzy to chyba nie wiedzą co mówią!</td></tr>
+                            <tr><td>_Żigolo_</td><td>Kto czyta takie bzdety? Ludzie...</td></tr>
+                            <tr><td>xXDExTEROSKYXx</td><td>Nie wiem czego się spodziewałem</td></tr>
+                            <tr><td>Wielki_Maniak12</td><td>Te recenzje to chyba bot pisał, już nie będę tego czytał.</td></tr>
+                        </tbody>
+                </table>
+                <table class="mile">    
+                    <caption>Miłe słowa</caption>
+                        <thead>
+                            <tr><th scope="col">Nick</th>
+                            <th scope="col">Komentarz</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>BotPiotr</td><td>Całkiem ok sie czyta.</td></tr>
+                            <tr><td>Anonim</td><td>Nie jest źle.</td></tr>
+                        </tbody>
+                </table>
+            </div>
+            <h1 id ="Napisz">Napisz coś do nas</h1>
+                <form action="/zapisy" method="post" class="zapisy">
+                    <div class="mail">
+                        <label for="mail">E-mail</label>
+                        <input id="mail" name="mail" type="email" required>
+                    </div>
+                    <div class="nick">
+                        <label for="nick">Nick</label>
+                        <input id="nick" name="nick" type="text">
+                    </div>
+                    <div class="tresc">
+                        <label for="tresc">Treść</label>
+                        <input id="tresc" name="tresc" type="text">
+                    </div>
+                    <button type="submit" class="wyslij">Wyślij</button>
+                </form>
         </main>
-    <h1 id="Wiadomości">Wiadomości</h1>
-        <main>
-            <article>
-                <h2>GTA VI</h2>
-                <p>Kolejne przecieki w firmie rockstar games wzięły pod pytajnik jakosc nowej części.</p>
-            </article>
-            <aside>
-                <h2>Ciekawostka</h2>
-                <p>Alternatywne źródła mówią, że to nieprawda.</p>
-            </aside>
-        </main>
-   <h1 id="Screenshoty">Screenshoty</h1>
-        <ul>
-            <li>BUG<img src="Screen1.png"></li>
-            <li>SCENERIE W GRACH<img src="Screen2.png"></li>
-        </ul>
-    <h1 id="Komentarze">Komentarze Internautów</h1>
-        <table>
-            <caption>Nie za miłe komentarze</caption>
-                <thead>
-                    <tr><th scope="col">Nick</th>
-                    <th scope="col">Komentarz</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Maliniarz33</td><td>Redaktorzy to chyba nie wiedzą co mówią!</td></tr>
-                    <tr><td>_Żigolo_</td><td>Kto czyta takie bzdety? Ludzie...</td></tr>
-                    <tr><td>xXDExTEROSKYXx</td><td>Nie wiem czego się strodziewałem</td></tr>
-                    <tr><td>Wielki_Maniak12</td><td>Ja to nie lubię tej gry co jej daliście 10, już nie będę tego czytał.</td></tr>
-                </tbody>
-        </table>
-        <table>    
-            <caption>Miłe słowa</caption>
-                <thead>
-                    <tr><th scope="col">Nick</th>
-                    <th scope="col">Komentarz</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>BotPiotr</td><td>Całkiem ok sie czyta.</td></tr>
-                    <tr><td>Anonim</td><td>Nie jest źle.</td></tr>
-                </tbody>
-        </table>
-    <h1 id ="Napisz">Napisz coś do nas</h1>
-        <form action="/zapisy" method="post">
-            <label for="mail">E-mail</label>
-            <input id="mail" name="mail" type="email" required>
-            <label for="nick">Nick</label>
-            <input id="nick" name="nick" type="text">
-            <label for="tresc">Treść</label>
-            <input id="tresc" name="tresc" type="text">
-            <button type="submit">Wyślij</button>
-        </form>
-    <h1 id="Autorzy">Autorzy</h1>
-    <footer>Karol</footer>
+        <footer>
+            <h1 id="Autorzy">Autor</h1>
+            <h2>Karol</h2>
+        </footer>
+    </div>
 </body>
 </html>
