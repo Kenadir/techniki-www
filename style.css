@@ -146,7 +146,6 @@ nav h1 a, nav ul li a{
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 1em 1em 0 0;
 }
 
 .Zdjecia li{
@@ -218,12 +217,12 @@ nav h1 a, nav ul li a{
 
 .niemile th:first-child,
 .mile th:first-child {
-    border-top-left-radius: 1em; 
+    border-top-left-radius: 0.8em; 
 }
 
 .niemile th:last-child,
 .mile th:last-child {
-    border-top-right-radius: 1em;
+    border-top-right-radius: 0.8em;
 }
 
 .niemile td, .mile td {
@@ -329,7 +328,6 @@ footer{
 
 footer h1{
     font-size: 0.8rem;
-
 }
 
 footer h2 {
