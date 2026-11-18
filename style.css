@@ -59,6 +59,21 @@ header p{
     grid-template-areas:
         "wiadomosc ciekawostka"
     ;
+    gap: 20px;
+}
+
+.wiadomosc{
+    grid-area: wiadomosc;
+}
+
+.ciekawostka{
+    grid-area: ciekawostka;
+    background-color: #2c3632;
+    border-radius: 1em 1em 1em 1em;
+    padding: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 2px solid rgb(62, 104, 90);
 }
 
 nav{
@@ -67,6 +82,7 @@ nav{
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     grid-auto-rows: auto;
+    column-gap: 30px;
     position: sticky;
     top: 0;
     grid-template-areas:
@@ -189,7 +205,7 @@ nav h1 a, nav ul li a{
 }
 
 .niemile th, .mile th {
-    background-color: #1f362e; 
+    background-color: #253a33; 
     padding: 12px 16px;
     font-size: 1.1rem;
     font-weight: bold;
@@ -328,38 +344,117 @@ footer h2 {
     }
 }
 
- @media(max-width: 600px){
+ @media(max-width: 722px){
 
-     nav {
+     .strona {
         grid-template-columns: 1fr;
-        position: static;
     }
 
-    nav ul {
+    main {
+        margin: 10px;
+    }
+
+    header, nav, footer, main > article, .wiadomosci, .galeria, .komentarze, .zapisy {
+        padding: 15px;
+        width: 100%;
+        height: auto; 
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    nav {
         grid-template-columns: 1fr;
-        justify-content: center;
-        padding: 10px;
+        grid-template-areas: none; 
+        position: static; 
+        gap: 10px;
     }
 
     nav h1 {
         text-align: center;
+        margin: 5px 0;
+    }
+
+    nav ul {
+        grid-auto-flow: row; 
+        justify-content: stretch;
+        gap: 8px;
+        width: 100%;
     }
 
     nav ul li {
-        width: auto;
+        width: 100%;
         text-align: center;
     }
 
-    .wiadomosci{grid-template-columns: 1fr;}
-    .komentarze {grid-template-columns: 1fr;}
+    .wiadomosci {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "wiadomosc"
+            "ciekawostka";
+        gap: 15px;
+    }
+
+    .Zdjecia {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .Zdjecia span {
+        padding: 12px;
+    }
+
+    .komentarze {
+        grid-template-columns: 1fr;
+        grid-template-areas: none; 
+        gap: 20px;
+    }
+
+    .niemile, .mile {
+        table-layout: fixed; 
+        width: 100%;
+    }
+
+    .niemile caption, .mile caption {
+        padding: 12px;
+    }
+
+    .niemile th, .mile th, .niemile td, .mile td {
+        padding: 8px;
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+
+    .zapisy {
+        max-width: 100%;
+    }
+
+    .mail, .nick, .tresc, .wyslij {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        justify-self: stretch;
+        padding: 15px;
+    }
 }
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 723px) and (max-width: 1024px) {
     .Zdjecia {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .wiadomosci {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    nav ul{
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
     }
 }
 
